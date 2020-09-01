@@ -7,9 +7,39 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>currency converter</h1>
-		<!-- <input type="number" id="amount" /> -->
-		<!-- <button id="convertButton">Convert</button> -->
+		<div class="full">
+			<div class="title"><h1>currency converter</h1></div>
+
+			<div class="amounttype">
+				<label for="convertamount">Amount to convert: </label
+				><input id="inputAmount" />
+			</div>
+
+			<div class="dropdown">
+				<select id="fromcurrencylist">
+					<option>USD</option>
+					<option>VND</option>
+					<option>???</option>
+					<option>???</option>
+				</select>
+				<p class="fromandto">to</p>
+				<select id="tocurrencylist">
+					<option>USD</option>
+					<option>VND</option>
+					<option>???</option>
+					<option>???</option>
+				</select>
+			</div>
+
+			<div class="conbutloc">
+				<button class="conbutton" onclick="con()" id="convertButton">
+					Convert
+				</button>
+			</div>
+
+			<div class="res"><div id="resultArea">result here</div></div>
+		</div>
+
 		<script src="index.js"></script>
 	</body>
 </html>
